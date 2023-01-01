@@ -1,0 +1,1 @@
+openssl req -x509 -new -nodes -key ../../cert/myCA.key -sha256 -days 365 -out ../../cert/myCA.pem

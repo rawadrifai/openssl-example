@@ -14,8 +14,8 @@ app.use("/", (req, res, next) => {
 // });
 
 const options = {
-  key: fs.readFileSync("cert/key.pem"),
-  cert: fs.readFileSync("cert/cert.pem"),
+  key: fs.readFileSync("cert/server.key"),
+  cert: fs.readFileSync("cert/server.crt"),
 };
 
 // https
@@ -23,9 +23,7 @@ const options = {
 //     res.writeHead(200);
 //     res.end("hello world\n");
 //   })
-//   .listen(3000);
-// app.listen(3443, () => console.log("listening"));
+//   .listen(3000, () => console.log("listening"));
 
 const sslServer = https.createServer(options, app);
-
 sslServer.listen(3000, () => console.log("Server started 🚀🚀🚀"));

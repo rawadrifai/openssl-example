@@ -1,0 +1,11 @@
+openssl x509 \
+-req \
+-days 365 \
+-sha256 \
+-in ../../cert/server.csr \
+-CAkey ../../cert/myCA.key \
+-CA ../../cert/myCA.pem \
+-CAcreateserial \
+-signkey ../../cert/server.key \
+-out ../../cert/server.crt \
+-extfile x509-v3-extension-config.ext
