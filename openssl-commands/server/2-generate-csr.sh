@@ -1,1 +1,1 @@
-openssl req -new -key ../../cert/server.key -out ../../cert/server.csr
+openssl req -key ../../cert/localhost.key -new -out ../../localhost.csr

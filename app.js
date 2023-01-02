@@ -14,8 +14,8 @@ app.use("/", (req, res, next) => {
 // });
 
 const options = {
-  key: fs.readFileSync("cert/server.key"),
-  cert: fs.readFileSync("cert/server.crt"),
+  key: fs.readFileSync("cert/localhost.key"),
+  cert: fs.readFileSync("cert/localhost.crt"),
 };
 
 // https

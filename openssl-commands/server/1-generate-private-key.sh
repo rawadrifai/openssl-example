@@ -1,1 +1,1 @@
-openssl genrsa -out ../../cert/server.key 2048
+openssl genrsa -des3 -out ../../cert/localhost.key 2048

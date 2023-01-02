@@ -1,0 +1,1 @@
+openssl x509 -req -CA ../../cert/rootCA.crt -CAkey ../../cert/rootCA.key -in ../../cert/localhost.csr -out ../../cert/localhost.crt -days 365 -CAcreateserial -extfile domain.ext

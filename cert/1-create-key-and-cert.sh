@@ -1,0 +1,1 @@
+openssl req -newkey rsa:2048 -keyout localhost.key -x509 -days 365 -out localhost.crt

@@ -1,7 +1,1 @@
-openssl x509 \
--req \
--days 365 \
--sha256 \
--in ../../cert/server.csr \
--signkey ../../cert/server.key \
--out ../../cert/server.crt \
+openssl x509 -signkey ../../cert/localhost.key -in ../../cert/localhost.csr -req -days 365 -out ../../cert/localhost.crt
